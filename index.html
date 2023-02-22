@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="box1">
+      <img class="logo" src="images/logo.svg" alt="">
+      <div>
+        <span>Features <img src="images/icon-arrow-down.svg"></span>
+        <span>Company <img src="images/icon-arrow-down.svg"></span>
+        <span>Careers</span>
+        <span>About</span>
+      </div>
+    </div>
+        
+      <div class="box2">
+        <button>login</button>
+        <button>register</button>
+      </div>
+    <img src="images/icon-menu.svg" class="menu-icon" onclick="togglemenu()">
+  </header>
+
+  <main>
+    <div class="column-1">
+      <h1>Make <br> remote work</h1>
+      <p>
+        Get your team in sync, no matter your location. <br> Streamline processes,
+        create team rituals, and <br> watch productivity soar.
+      </p>
+      <button>Learn more</button>
+    
+      <div class="img-Container">
+        <img src="images/client-databiz.svg">
+        <img src="images/client-audiophile.svg">
+        <img src="images/client-meet.svg">
+        <img src="images/client-maker.svg">
+      </div>
+    </div>
+    
+    <div class="column-2">
+      <img src="images/image-hero-desktop.png" class="controller">
+    </div>
+
+
+    <script>
+
+      var menuList = document.getElementById("menuList");
+
+      menuList.style.maxHeight = "0px";
+
+      function togglemenu() {
+
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "130px";
+        }
+        else {
+          menuList.style.maxHeight = "0px";
+
+        }
+
+
+      }
+    </script>
+
+
+  </main>
+</body>
+</html>
